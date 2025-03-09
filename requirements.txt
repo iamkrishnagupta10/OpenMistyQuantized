@@ -1,0 +1,36 @@
+# Core dependencies
+pydantic~=2.10.4
+openai~=1.58.1
+tenacity~=9.0.0
+pyyaml~=6.0.2
+loguru~=0.7.3
+numpy~=1.26.4
+datasets~=3.2.0
+psutil~=5.9.8
+
+# Web and browser tools
+html2text~=2024.2.26
+gymnasium~=1.0.0
+pillow~=10.4.0
+browsergym~=0.13.3
+uvicorn~=0.34.0
+unidiff~=0.7.5
+browser-use~=0.1.40
+googlesearch-python~=1.3.0
+
+# File handling
+aiofiles~=24.1.0
+pydantic_core~=2.27.2
+colorama~=0.4.6
+playwright~=1.49.1
+
+# Model quantization and optimization
+transformers~=4.40.0
+accelerate~=0.30.1
+bitsandbytes~=0.43.0
+optimum~=1.17.1
+onnx~=1.15.0
+onnxruntime~=1.17.0
+torch~=2.2.1
+sentencepiece~=0.1.99
+huggingface_hub~=0.20.3 

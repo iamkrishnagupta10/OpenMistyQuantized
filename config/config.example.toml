@@ -1,0 +1,39 @@
+# Global LLM configuration
+[llm]
+# Choose between "local" or "api" mode
+mode = "local"
+
+# For local mode, specify the model path or HuggingFace model ID
+model = "mistralai/Mistral-7B-Instruct-v0.2"
+# Quantization level: "4bit", "8bit", or "none"
+quantization = "4bit"
+# Device to run the model on: "cuda", "cpu", or "mps" (for Apple Silicon)
+device = "auto"
+# Maximum sequence length
+max_seq_length = 4096
+# Sampling temperature (0.0 to 1.0)
+temperature = 0.0
+
+# For API mode, specify the API details
+api_type = "openai"  # "openai", "azure", or "anthropic"
+api_key = "sk-..."
+base_url = "https://api.openai.com/v1"
+api_version = ""  # Required for Azure OpenAI
+
+# Optional configuration for specific LLM models
+[llm.vision]
+mode = "api"
+model = "gpt-4o"
+api_key = "sk-..."
+base_url = "https://api.openai.com/v1"
+
+# Hardware optimization settings
+[hardware]
+# Enable hardware-aware optimization
+optimize_for_hardware = true
+# Maximum memory usage in GB (0 for auto-detect)
+max_memory_gb = 0
+# Number of CPU threads to use (0 for auto-detect)
+cpu_threads = 0
+# Enable mixed precision (fp16) for faster inference
+mixed_precision = true 
